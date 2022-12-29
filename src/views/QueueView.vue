@@ -7,7 +7,6 @@
                     performed in First In First Out (FIFO) order. We define a queue to be a list in which all additions
                     to the list are made at one end, and all deletions from the list are made at the other end.</p>
                 <div class="card-actions justify-end">
-                    <!-- <button class="btn btn-primary">Buy Now</button> -->
                 </div>
             </div>
         </div>
@@ -54,8 +53,6 @@ export default {
     },
 
     mounted() {
-        //print route name
-
         const script = function (p5) {
 
             let queue = new Queue();
@@ -113,7 +110,6 @@ export default {
 };
 </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #vue-canvas {
     display: block;

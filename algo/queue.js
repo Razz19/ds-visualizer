@@ -28,7 +28,6 @@ class Queue {
     }
 
     show(p5, width, height) {
-        //draw the queue items in a column
         for (let i = 1; i < this.items.length + 1; i++) {
             p5.fill('#C8C8C8');
             p5.noStroke();

@@ -26,12 +26,40 @@
         </ul>
       </div>
       <div class="navbar-end mr-5" disabled>
-        <p class="stat-title">by..</p>
+
       </div>
     </div>
 
-    <div class="container mx-10  w-full">
+    <div class=" ">
       <router-view />
     </div>
   </div>
 </template>
+
+
+<style scoped>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+  font-size: 20px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>

@@ -7,7 +7,6 @@
           order may be LIFO(Last In First Out) or FILO(First In Last Out). There are many real-life examples of a stack.
           Consider an example of plates stacked over one another in the canteen.</p>
         <div class="card-actions justify-end">
-          <!-- <button class="btn btn-primary">Buy Now</button> -->
         </div>
       </div>
     </div>
@@ -73,7 +72,6 @@ export default {
         push.position(50, 360);
         push.mousePressed(() => {
           console.log("stack push");
-          //add a random value to the stack
           const value = Math.floor(Math.random() * 100);
           stack.push(value);
 
@@ -112,7 +110,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #vue-canvas {
   display: block;

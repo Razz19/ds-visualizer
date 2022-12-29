@@ -89,7 +89,7 @@ export default {
         button = p5.createButton('Add Node');
         button.id('addbtn');
         button.addClass("btn btn-sm btn-accent")
-        button.position(50, 360);
+        button.position(50, 365);
         let remove = p5.createButton('Remove Node');
         remove.id('removebtn');
         remove.addClass("btn btn-sm btn-error")
@@ -121,9 +121,6 @@ export default {
           }
           box.value(null);
         })
-
-        //write a red message on the canvas 
-
         tree.addNode(10)
         tree.addNode(5)
         tree.addNode(15)
@@ -132,9 +129,6 @@ export default {
       };
       // NOTE: Draw is here
       p5.draw = _ => {
-
-
-        //draw a circle
         p5.background(51);
         xSpace = width;
         ySpace = height / (tree.depth() + 1);
